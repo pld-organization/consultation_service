@@ -8,7 +8,6 @@ import { AppService } from './app.service';
 // your modules
 import { ConsultationModule } from './consultation/consultation.module';
 // add others if needed
-import {UploadModule} from './uplaoder/upload.module';
 @Module({
   imports: [
     // ✅ MongoDB connection
@@ -16,7 +15,7 @@ import {UploadModule} from './uplaoder/upload.module';
 
     // ✅ Feature modules
     ConsultationModule,
-    UploadModule,
+
   ],
   controllers: [AppController],
   providers: [AppService],
